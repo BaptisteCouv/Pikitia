@@ -51,8 +51,14 @@ h3 {
 #couleur {
     margin: 0;
     padding: 0;
-    background: url('img/background.jpg');
+    background: url('https://insta-theme.store/app/uploads/2018/03/filtre-instagram-insta-theme-store-1024x614.jpg');
     background-size: cover;
+}
+
+h4 {
+    margin-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 .connexion-user {
@@ -62,11 +68,14 @@ h3 {
 }
 
 .marg {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.test {
+.formulaire-connexion {
     margin-top: 50px;
     font-family: 'Lobster', cursive;
     text-align: center;
 }
+
+
+/* inscritption.php */

@@ -26,13 +26,16 @@
                 <div class="connexion-user col-12 col-md-8 form-group">
                     <div class="row justify-content-center">
                         <div class="col-6 formulaire-connexion">
-                            <h1>Connexion</h1>
-                            <form action="traitement_connexion.php" method="post">
+                            <h1>Inscription</h1>
+                            <form action="traitement_inscription.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
+                                <input class="marg form-control" type="text" name="nom" placeholder="Entrer votre nom">
+                                <input class="marg form-control" type="text" name="prenom" placeholder="Entrer votre prénom">
+                                <input class="marg form-control" type="text" name="email" placeholder="Entrer votre @ email">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
-                                <button type="submit" class="marg btn btn-primary">Connexion</button>
+                                <button type="submit" class="marg btn btn-primary">Inscription</button>
                             </form>
-                            <h4 class="marg">Vous N'avez pas de compte chez <b>Pikitia</b> ? Inscrivez-vous des <a href="inscription.php">maintenant</a></h4>
+                            <h4 class="marg">Déjà un compte chez <b>Pikitia</b> ?<a href="connexion.php">Connectez-vous</a></h4>
                         </div>
                     </div>
                 </div>
