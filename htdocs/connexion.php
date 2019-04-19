@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pikitia</title>
+    <title>Pikitia | Connexion</title>
     <!-- NE JAMAIS METTRE DES LIEN BOOSTRAP ICI !!!!!!!!!!!!!!!!!!!!!!! -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+    </head>
+<body id="couleur">
     <header>
         <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
@@ -25,17 +23,17 @@
     <section>
         <div class="container">
             <div class="row justify-content-center piki">
-                <div class="header-home col-12 col-md-8">
-                    <div class="">a</div>
-                </div>
-                <div class="image-home col-12 col-md-8">
-                    image
-                </div>
-                <div class="image-like col-12 col-md-8">
-                    like
-                </div>
-                <div class="image-commentaire col-12 col-md-8">
-                    commentaire
+                <div class="connexion-user col-12 col-md-8 form-group">
+                    <div class="row justify-content-center">
+                        <div class="col-6 test">
+                            <h2>Connexion</h2>
+                            <form action="traitement_connexion.php" method="post">
+                                <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
+                                <input class="marg form-control" type="text" name="mdp" placeholder="Entrer votre mot de passe">
+                                <button type="submit" class="marg btn btn-primary">Connexion</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,7 +49,6 @@
             <a class="navbar-brand" href="#"><i class="fas fa-location-arrow"></i></a>
         </nav>
     </footer>
-
 </body>
 <!-- Boostrap -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

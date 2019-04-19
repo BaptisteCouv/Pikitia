@@ -1,0 +1,72 @@
+.navbar {
+    margin: 0;
+}
+
+
+/* index.php */
+
+.header-home {
+    margin-top: 55px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.image-home {
+    background-color: red;
+    height: 500px;
+}
+
+.image-like {
+    padding: 10px;
+    background-color: green;
+}
+
+.image-commentaire {
+    height: 150px;
+    background-color: aqua;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+
+/* profil_user.php */
+
+.profil-user {
+    margin-top: 55px;
+    height: 250px;
+    background-color: blue;
+}
+
+.image-user {
+    height: 100%;
+    background-color: yellow;
+}
+
+
+/* connexion.php */
+
+#couleur {
+    margin: 0;
+    padding: 0;
+    background: url('img/background.jpg');
+    background-size: cover;
+}
+
+.connexion-user {
+    margin-top: 55px;
+    bottom: 0;
+    font-size: 30px;
+}
+
+.marg {
+    margin-top: 10px;
+}
+
+.test {
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
