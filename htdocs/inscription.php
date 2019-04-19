@@ -27,7 +27,7 @@
                     <div class="row justify-content-center">
                         <div class="col-6 formulaire-connexion">
                             <h1>Inscription</h1>
-                            <form action="traitement_inscription.php" method="post">
+                            <form action="traitement/traitement_inscription.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="text" name="nom" placeholder="Entrer votre nom">
                                 <input class="marg form-control" type="text" name="prenom" placeholder="Entrer votre prénom">
@@ -35,7 +35,7 @@
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
                                 <button type="submit" class="marg btn btn-primary">Inscription</button>
                             </form>
-                            <h4 class="marg">Déjà un compte chez <b>Pikitia</b> ?<a href="connexion.php">Connectez-vous</a></h4>
+                            <h4 class="marg">Déjà un compte chez <b>Pikitia</b>?<a href="connexion.php">Connectez-vous</a></h4>
                         </div>
                     </div>
                 </div>

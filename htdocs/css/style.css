@@ -62,7 +62,7 @@ h4 {
 }
 
 .connexion-user {
-    margin-top: 55px;
+    margin-top: 105px;
     bottom: 0;
     font-size: 30px;
 }
@@ -72,9 +72,17 @@ h4 {
 }
 
 .formulaire-connexion {
+    padding: 40px;
     margin-top: 50px;
     font-family: 'Lobster', cursive;
     text-align: center;
+    background-color: white;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 

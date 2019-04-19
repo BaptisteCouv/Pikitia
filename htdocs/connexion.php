@@ -27,7 +27,7 @@
                     <div class="row justify-content-center">
                         <div class="col-6 formulaire-connexion">
                             <h1>Connexion</h1>
-                            <form action="traitement_connexion.php" method="post">
+                            <form action="traitement/traitement_connexion.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
                                 <button type="submit" class="marg btn btn-primary">Connexion</button>
