@@ -17,7 +17,5 @@ if(!empty($_POST['pseudo']) || !empty($_POST['mdp'])){
         header("Location: ../connexion.php?validInscription=$validIncription");
     }
 }else{
-    echo "error deja pris";
+    header("Location: ../inscription.php");
 }
-
-
