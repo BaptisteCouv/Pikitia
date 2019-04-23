@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pikitia | Connexion</title>
     <!-- NE JAMAIS METTRE DES LIEN BOOSTRAP ICI !!!!!!!!!!!!!!!!!!!!!!! -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    </head>
+</head>
+
 <body id="couleur">
     <header>
         <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
-            <a class="navbar-brand" href="index.php"><h3>Pikitia</h3></a>
+            <a class="navbar-brand" href="index.php">
+                <h3>Pikitia</h3>
+            </a>
             <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user"></i></a>
         </nav>
     </header>
-
 
     <section>
         <div class="container">
@@ -27,6 +30,22 @@
                     <div class="row justify-content-center">
                         <div class="col-6 formulaire-connexion">
                             <h1>Connexion</h1>
+                            <?php if (!empty($_GET['errConnexion'])) {
+                                echo $_GET['errConnexion'];
+                            }
+                            ?>
+
+                            <?php 
+                                if(!empty($_GET['validInscription'])){
+                                    ?><div class="alert alert-success" role="alert"><?php
+                                    echo $_GET['validInscription'];?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>   
+                                    </div>
+                                <?php
+                                }
+                            ?>
                             <form action="traitement/traitement_connexion.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
@@ -40,10 +59,9 @@
         </div>
     </section>
 
-
     <footer>
 
-    <nav class="row navbar fixed-bottom navbar-light bg-light">
+        <nav class="row navbar fixed-bottom navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
             <a class="navbar-brand" href="#"><i class="fas fa-search"></i></a>
             <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>

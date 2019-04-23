@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pikitia | Connexion</title>
+    <title>Pikitia | Inscription</title>
     <!-- NE JAMAIS METTRE DES LIEN BOOSTRAP ICI !!!!!!!!!!!!!!!!!!!!!!! -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     </head>
@@ -27,6 +27,17 @@
                     <div class="row justify-content-center">
                         <div class="col-6 formulaire-connexion">
                             <h1>Inscription</h1>
+                            <?php 
+                                if(!empty($_GET['erreurIncription'])){
+                                    ?><div class="alert alert-danger" role="alert"><?php
+                                    echo $_GET['erreurIncription'];?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>   
+                                    </div>
+                                <?php
+                                }
+                            ?>
                             <form action="traitement/traitement_inscription.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="text" name="nom" placeholder="Entrer votre nom">
