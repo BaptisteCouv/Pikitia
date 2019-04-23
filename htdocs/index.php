@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pikitia</title>
-    <link rel="icon" type="image/png" href="img/icon.png" />
     <!-- NE JAMAIS METTRE DES LIEN BOOSTRAP ICI !!!!!!!!!!!!!!!!!!!!!!! -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -33,10 +32,10 @@
                     image
                 </div>
                 <div class="image-like col-12 col-md-8">
-                    like
+                <i class="far fa-heart"></i>: like
                 </div>
                 <div class="image-commentaire col-12 col-md-8">
-                    commentaire
+                <i class="far fa-comment"></i> Commentaires:
                 </div>
             </div>
         </div>

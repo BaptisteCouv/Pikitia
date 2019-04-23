@@ -6,9 +6,15 @@
 /* index.php */
 
 .header-home {
-    margin-top: 55px;
+    margin-top: 80px;
     padding: 20px;
     background-color: aquamarine;
+}
+
+.header-home2 {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: yellow;
 }
 
 .image-home {
@@ -35,7 +41,7 @@ h3 {
 /* profil_user.php */
 
 .profil-user {
-    margin-top: 55px;
+    margin-top: 105px;
     height: 250px;
     background-color: blue;
 }

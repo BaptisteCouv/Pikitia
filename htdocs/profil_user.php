@@ -20,7 +20,7 @@ session_start();
         <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
             <a class="navbar-brand" href="index.php"><h3>Pikitia</h3></a>
-            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user"></i></a>
+            <a class="navbar-brand" href="connexion.php"><i class="fas fa-layer-group"></i></a>
         </nav>
     </header>
 
@@ -29,7 +29,10 @@ session_start();
         <div class="container">
             <div class="row justify-content-center piki">
                 <div class="profil-user col-12 col-md-8">
-                    <a class="navbar-brand" href="connexion.php"><i class="fas fa-user"></i></a>
+                    <form action="traitement/traitement_image.php" method="post">
+                        <input type="file" id="fileselect" accpect="img/" name="fileselect">
+                        <button type="submit">NONE</button>
+                    </form>
                 </div>
                 <div class="image-user col-12 col-md-8">
                     a
