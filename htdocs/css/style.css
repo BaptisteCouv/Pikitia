@@ -40,10 +40,16 @@ h3 {
 
 /* profil_user.php */
 
+.testimage{
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    justify-content: center;
+}
+
 .profil-user {
-    margin-top: 105px;
     height: 250px;
-    background-color: blue;
+    padding: 10px;
+    text-align: center;
 }
 
 .image-user {
@@ -51,6 +57,23 @@ h3 {
     background-color: yellow;
 }
 
+.profil-user-margin{
+    margin-top: 100px;
+}
+
+.nom-user{
+    font-size: 16px;
+}
+
+.text-user{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.famasito{
+    color: red;
+}
 
 /* connexion.php */
 
@@ -60,6 +83,7 @@ h3 {
     background: url('https://insta-theme.store/app/uploads/2018/03/filtre-instagram-insta-theme-store-1024x614.jpg');
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 #couleur:after {
@@ -115,3 +139,4 @@ h4 {
 .alert {
     font-size: 20px;
 }
+

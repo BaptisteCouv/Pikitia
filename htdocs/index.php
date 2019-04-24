@@ -17,7 +17,7 @@
         <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
             <a class="navbar-brand" href="index.php"><h3>Pikitia</h3></a>
-            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user"></i></a>
+            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-circle"></i></a>
         </nav>
     </header>
 

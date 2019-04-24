@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="index.php">
                 <h3>Pikitia</h3>
             </a>
-            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user"></i></a>
+            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-circle"></i></a>
         </nav>
     </header>
 
@@ -32,24 +32,34 @@
                             <h1>Connexion</h1>
                             <?php if (!empty($_GET['errConnexion'])) {
                                 ?><div class="alert alert-danger" role="alert"><?php
-                                echo $_GET['errConnexion'];?>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        echo $_GET['errConnexion']; ?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
-                                    </button>   
+                                    </button>
                                 </div>
                             <?php
-                            }
-                            ?>
+                        }
+                        ?>
                             <?php if (!empty($_GET['validInscription'])) {
                                 ?><div class="alert alert-success" role="alert"><?php
-                                echo $_GET['validInscription'];?>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>   
-                            </div>
+                                        echo $_GET['validInscription']; ?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                             <?php
-                            }
-                            ?>
+                        }
+                        ?>
+                            <?php if (!empty($_GET['deconnexionUser'])) {
+                                ?><div class="alert alert-danger" role="alert"><?php
+                                        echo $_GET['deconnexionUser']; ?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <?php
+                        }
+                        ?>
                             <form action="traitement/traitement_connexion.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
