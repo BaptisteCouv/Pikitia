@@ -29,9 +29,9 @@ session_start();
         <div class="container">
             <div class="row justify-content-center piki">
                 <div class="profil-user col-12 col-md-8">
-                    <form action="traitement/traitement_image.php" method="post">
+                    <form enctype="multipart/form-data" action="traitement/traitement_image.php" method="post">
                         <input type="file" id="fileselect" accpect="img/" name="fileselect">
-                        <button type="submit">NONE</button>
+                        <button type="submit" name="submit">NONE</button>
                     </form>
                 </div>
                 <div class="image-user col-12 col-md-8">
