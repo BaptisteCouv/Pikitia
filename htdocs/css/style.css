@@ -59,11 +59,30 @@ h3 {
     padding: 0;
     background: url('https://insta-theme.store/app/uploads/2018/03/filtre-instagram-insta-theme-store-1024x614.jpg');
     background-size: cover;
+    position: relative;
+}
+
+#couleur:after {
+    content: "";
+    display: block;
+    position: fixed;
+    /* could also be absolute */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
 }
 
 h4 {
     margin-top: 20px;
     color: black;
+    font-family: 'Lobster', cursive;
 }
 
 .connexion-user {
@@ -79,7 +98,6 @@ h4 {
 .formulaire-connexion {
     padding: 40px;
     margin-top: 50px;
-    font-family: 'Lobster', cursive;
     text-align: center;
     background-color: white;
     background: #fff;
@@ -87,6 +105,7 @@ h4 {
     display: inline-block;
     margin: 1rem;
     position: relative;
+    z-index: 20;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
