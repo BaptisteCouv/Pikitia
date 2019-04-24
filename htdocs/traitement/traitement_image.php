@@ -5,7 +5,7 @@ include '../bdd.php';
 $id_user = $_SESSION['id'];
 
 $target_dir = "../img/user-img/";
-$target_files = $id_user . basename($_FILES["fileselect"]["name"]);
+$target_files = $id_user . "_" . basename($_FILES["fileselect"]["name"]);
 $target_file = $target_dir . $target_files;
 $target_tmp = $_FILES['fileselect']['tmp_name'];
 $uploadOk = 1;
