@@ -31,7 +31,23 @@
                         <div class="col-6 formulaire-connexion">
                             <h1>Connexion</h1>
                             <?php if (!empty($_GET['errConnexion'])) {
-                                echo $_GET['errConnexion'];
+                                ?><div class="alert alert-danger" role="alert"><?php
+                                echo $_GET['errConnexion'];?>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>   
+                                </div>
+                            <?php
+                            }
+                            ?>
+                            <?php if (!empty($_GET['validInscription'])) {
+                                ?><div class="alert alert-success" role="alert"><?php
+                                echo $_GET['validInscription'];?>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>   
+                            </div>
+                            <?php
                             }
                             ?>
                             <form action="traitement/traitement_connexion.php" method="post">
