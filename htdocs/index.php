@@ -39,7 +39,7 @@ include 'bdd.php';
                         <div class="row justify-content-center piki">
                             <div class="header-home col-12 col-md-8">
                                 <div class="nom-user-index">
-                                    <a>'.$images_liste['user_name'].'</a>
+                                    <a><i class="far fa-user-circle"></i>'.' '.$images_liste['user_name'].'</a>
                                 </div>
                             </div>
                             <div class="image-home col-12 col-md-8">

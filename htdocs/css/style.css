@@ -8,27 +8,25 @@
 
 .header-home {
     margin-top: 80px;
-    background-color: aquamarine;
-}
-
-.header-home2 {
-    margin-top: 80px;
-    padding: 20px;
-    background-color: yellow;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(70deg, #26051D, #40A497);
 }
 
 .image-home {
-    background-color: red;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #A7A7A7;
+    padding: 5px;
 }
 
 .image-like {
     padding: 10px;
-    background-color: green;
+    background-color: #F2F2F2;
 }
 
 .image-commentaire {
     height: 150px;
-    background-color: aqua;
+    background: linear-gradient(#F2F2F2, white);
 }
 
 h3 {
@@ -38,6 +36,7 @@ h3 {
 
 
 /* profil_user.php */
+
 
 .testimage {
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -49,13 +48,11 @@ h3 {
     text-align: center;
 }
 
-.test300 {
+.profil-edit {
     background: linear-gradient(70deg, #26051D, #40A497);
-    border-bottom: 2px solid #A7A7A7;
     margin-bottom: 10px;
     border-radius: 2px;
     color: white;
-    height: 220px;
 }
 
 .modal-title {
@@ -64,19 +61,19 @@ h3 {
 
 .image-user {
     height: 100%;
-    background-color: #F2F2F2;
+    background: linear-gradient(#F2F2F2, white);
     padding-top: 10px;
     border-radius: 2px;
     padding-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .profil-user-margin {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .nom-user-index {
     font-size: 25px;
-    font-weight: bold;
 }
 
 .text-user {
@@ -85,12 +82,22 @@ h3 {
     font-family: 'Arimo', sans-serif;
 }
 
+.text-user2 {
+    margin-top: 80px; 
+}
+
+
 .famasito {
     color: red;
 }
 
 .image-profil {
     margin: 2px;
+}
+
+l {
+    color: red;
+    text-align: center;
 }
 
 
@@ -138,7 +145,7 @@ h4 {
     background: linear-gradient(40deg, #26051D, #40A497);
 }
 
-#explique2{
+#explique2 {
     background: linear-gradient(40deg, #26051D, #40A497);
 }
 
