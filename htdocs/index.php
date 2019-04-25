@@ -1,3 +1,7 @@
+<?php
+session_start();
+include 'bdd.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,48 +11,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pikitia</title>
     <!-- NE JAMAIS METTRE DES LIEN BOOSTRAP ICI !!!!!!!!!!!!!!!!!!!!!!! -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
         <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
-            <a class="navbar-brand" href="index.php"><h3>Pikitia</h3></a>
+            <a class="navbar-brand" href="index.php">
+                <h3>Pikitia</h3>
+            </a>
             <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-circle"></i></a>
         </nav>
     </header>
 
 
     <section>
-        <div class="container">
-            <div class="row justify-content-center piki">
-                <div class="header-home col-12 col-md-8">
-                    <div class="">a</div>
-                </div>
-                <div class="image-home col-12 col-md-8">
-                    image
-                </div>
-                <div class="image-like col-12 col-md-8">
-                <i class="far fa-heart"></i>: like
-                </div>
-                <div class="image-commentaire col-12 col-md-8">
-                <i class="far fa-comment"></i> Commentaires:
-                </div>
-            </div>
-        </div>
+
+        <?php
+            $repp = $bdd->query('SELECT * FROM images');
+            $images_listes = $repp->fetchAll();
+            foreach ($images_listes as $images_liste) {
+                echo '<div class="container">
+                        <div class="row justify-content-center piki">
+                            <div class="header-home col-12 col-md-8">
+                                <div class="nom-user-index">
+                                    <a>'.$images_liste['user_name'].'</a>
+                                </div>
+                            </div>
+                            <div class="image-home col-12 col-md-8">
+                            <img src="' . $images_liste["image_lien"] .' " width="720px" height="550px" class="image-profil" alt="img" >
+                            </div>
+                            <div class="image-like col-12 col-md-8">
+                                <i class="far fa-heart"></i>: like
+                            </div>
+                            <div class="image-commentaire col-12 col-md-8">
+                                <i class="far fa-comment"></i> Commentaires:
+                            </div>
+                        </div>
+                    </div>';
+            }
+        ?>
+        
     </section>
 
 
     <footer>
 
-    <nav class="row navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+        <nav class="row navbar fixed-bottom navbar-light bg-light">
             <a class="navbar-brand" href="#"><i class="fas fa-search"></i></a>
+            <a class="navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
             <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>
-            <a class="navbar-brand" href="#"><i class="fas fa-location-arrow"></i></a>
         </nav>
     </footer>
 

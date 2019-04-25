@@ -63,7 +63,7 @@
                             <form action="traitement/traitement_connexion.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
-                                <button type="submit" class="marg btn btn-primary">Connexion</button>
+                                <button id="explique" type="submit" class="marg btn btn-primary">Connexion</button>
                             </form>
                             <h4 class="marg">Vous N'avez pas de compte chez <b>Pikitia</b> ? Inscrivez-vous des <a href="inscription.php">maintenant</a></h4>
                         </div>
@@ -73,14 +73,11 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer fixed-bottom footer-light bg-light">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="connexion.php"> Pikitia By Emilie&Baptiste</a>
+        </div>
 
-        <nav class="row navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
-            <a class="navbar-brand" href="#"><i class="fas fa-search"></i></a>
-            <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>
-            <a class="navbar-brand" href="#"><i class="fas fa-location-arrow"></i></a>
-        </nav>
     </footer>
 </body>
 <!-- Boostrap -->

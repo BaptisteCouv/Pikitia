@@ -1,5 +1,6 @@
 .navbar {
     margin: 0;
+    border-bottom: 1px solid #A7A7A7;
 }
 
 
@@ -7,7 +8,6 @@
 
 .header-home {
     margin-top: 80px;
-    padding: 20px;
     background-color: aquamarine;
 }
 
@@ -19,7 +19,6 @@
 
 .image-home {
     background-color: red;
-    height: 500px;
 }
 
 .image-like {
@@ -40,7 +39,7 @@ h3 {
 
 /* profil_user.php */
 
-.testimage{
+.testimage {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     justify-content: center;
@@ -52,28 +51,49 @@ h3 {
     text-align: center;
 }
 
-.image-user {
-    height: 100%;
-    background-color: yellow;
+.test300 {
+    background-color: #825B46;
+    border-bottom: 2px solid #A7A7A7;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    color: white;
 }
 
-.profil-user-margin{
+.modal-title {
+    color: black;
+}
+
+.image-user {
+    height: 100%;
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    border-radius: 2px;
+    padding-bottom: 10px;
+}
+
+.profil-user-margin {
     margin-top: 100px;
 }
 
-.nom-user{
-    font-size: 16px;
+.nom-user-index {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.text-user{
+.text-user {
     font-size: 30px;
     padding: 10px;
     font-family: 'Arimo', sans-serif;
 }
 
-.famasito{
+.famasito {
     color: red;
 }
+
+.image-profil {
+    margin: 2px;
+}
+
 
 /* connexion.php */
 
@@ -115,6 +135,10 @@ h4 {
     font-size: 30px;
 }
 
+#explique {
+    background-color: #825B46;
+}
+
 .marg {
     margin-top: 20px;
 }
@@ -139,4 +163,3 @@ h4 {
 .alert {
     font-size: 20px;
 }
-
