@@ -46,17 +46,16 @@ h3 {
 }
 
 .profil-user {
-    height: 250px;
-    padding: 10px;
     text-align: center;
 }
 
 .test300 {
-    background-color: #825B46;
+    background: linear-gradient(70deg, #26051D, #40A497);
     border-bottom: 2px solid #A7A7A7;
     margin-bottom: 10px;
     border-radius: 2px;
     color: white;
+    height: 220px;
 }
 
 .modal-title {
@@ -136,7 +135,11 @@ h4 {
 }
 
 #explique {
-    background-color: #825B46;
+    background: linear-gradient(40deg, #26051D, #40A497);
+}
+
+#explique2{
+    background: linear-gradient(40deg, #26051D, #40A497);
 }
 
 .marg {

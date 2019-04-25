@@ -14,9 +14,9 @@
 <body id="couleur">
     <header>
         <nav class="navbar fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
-            <a class="navbar-brand" href="index.php"><h3>Pikitia</h3></a>
-            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-circle"></i></a>
+            <a class="navbar-brand"><i class="fas fa-camera-retro"></i></a>
+            <a class="navbar-brand" href="connexion.php"><h3>Welcom In Pikitia</h3></a>
+            <a class="navbar-brand"><i class="fas fa-user-circle"></i></a>
         </nav>
     </header>
 
@@ -45,7 +45,7 @@
                                 <input class="marg form-control" type="text" name="prenom" placeholder="Entrer votre prénom">
                                 <input class="marg form-control" type="text" name="email" placeholder="Entrer votre @ email">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
-                                <button type="submit" class="marg btn btn-primary">Inscription</button>
+                                <button type="submit" id="explique2" class="marg btn btn-primary">Inscription</button>
                             </form>
                             <h4 class="marg">Déjà un compte chez <b>Pikitia</b>?<a href="connexion.php">Connectez-vous</a></h4>
                         </div>
@@ -56,14 +56,10 @@
     </section>
 
 
-    <footer>
-
-    <nav class="row navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
-            <a class="navbar-brand" href="#"><i class="fas fa-search"></i></a>
-            <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>
-            <a class="navbar-brand" href="#"><i class="fas fa-location-arrow"></i></a>
-        </nav>
+    <footer class="footer fixed-bottom footer-light bg-light">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="connexion.php"> Pikitia By Emilie&Baptiste</a>
+        </div>
     </footer>
 </body>
 <!-- Boostrap -->

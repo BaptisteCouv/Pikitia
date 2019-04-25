@@ -15,11 +15,11 @@
 <body id="couleur">
     <header>
         <nav class="navbar fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i></a>
-            <a class="navbar-brand" href="index.php">
-                <h3>Pikitia</h3>
+            <a class="navbar-brand"><i class="fas fa-camera-retro"></i></a>
+            <a class="navbar-brand" href="connexion.php">
+                <h3>Welcom In Pikitia</h3>
             </a>
-            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-circle"></i></a>
+            <a class="navbar-brand" ><i class="fas fa-user-circle"></i></a>
         </nav>
     </header>
 
@@ -77,7 +77,6 @@
         <div class="footer-copyright text-center py-3">© 2019 Copyright:
             <a href="connexion.php"> Pikitia By Emilie&Baptiste</a>
         </div>
-
     </footer>
 </body>
 <!-- Boostrap -->

@@ -24,7 +24,7 @@ include 'bdd.php';
             <a class="navbar-brand" href="index.php">
                 <h3>Pikitia</h3>
             </a>
-            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-circle"></i></a>
+            <a class="navbar-brand" href="profil_user.php"><i class="fas fa-user-check"></i></a>
         </nav>
     </header>
 
@@ -62,7 +62,7 @@ include 'bdd.php';
     <footer>
 
         <nav class="row navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-search"></i></a>
+            <a class="ml-3 navbar-brand" href="#"><i class="fas fa-search"></i></a>
             <a class="navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
             <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>
         </nav>

@@ -3,7 +3,7 @@ session_start();
 include 'bdd.php';
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang= "fr">
 
 <head>
     <meta charset="UTF-8">
@@ -25,18 +25,17 @@ include 'bdd.php';
             <a class="navbar-brand" href="index.php">
                 <h3>Pikitia</h3>
             </a>
-
-            <a class="navbar-brand"><i class="fas fa-user-circle"></i><?php echo " " . @$_SESSION['user']; ?></a>
+            <a class="navbar-brand"><i class="fas fa-user-check"></i></a>
         </nav>
     </header>
 
     <section>
         <div class="container">
             <div class="profil-user-margin row justify-content-center piki">
-                <div class="test300 profil-user col-5 col-md-4">
+                <!-- <div class="test300 profil-user col-5 col-md-4">
                     image
-                </div>
-                <div class="test300 user-description col-5 col-md-4">
+                </div> -->
+                <div class="test300 user-description col-5 col-md-8">
                     <div class="text-user col-12">
                         <a><b><?php echo $_SESSION['user']; ?></b></a><br>
                         <div class="nom-user">
@@ -93,8 +92,7 @@ include 'bdd.php';
 
         <nav class="row navbar fixed-bottom navbar-light bg-light">
             <a class="ml-3 navbar-brand" href="#"><i class="fas fa-search"></i></a>
-            <a class="navbar-brand" href="#"><i class="fas fa-search"></i></a>
-            <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>
+            <a class="navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
             <a class="navbar-brand" href="traitement/traitement_deconnexion.php"><i class="famasito fas fa-sign-out-alt"></i></a>
         </nav>
     </footer>
