@@ -48,16 +48,16 @@ foreach ($images_listes as $images_liste) {
         <div class="container">
             <div class="profil-user-margin row justify-content-center piki">
 
-                <div class="profil-edit user-description col-5 col-md-8">
+                <div class="profil-edit user-description col-12 col-md-8">
                     <div class="row">
                         <img class="rounded-circle mt-3 ml-3 mb-3" data-toggle="modal" data-target="#exampleModalCenter2" src="<?= $monAvatar ?>" width="190px" height="190px" alt="Modifier mon Avatar">
-                        <div class="text-user col-5">
+                        <div class="text-user col-md-5 col-12">
                             <a><b><?php echo $_SESSION['user']; ?></b></a><br>
                             <div class="nom-user">
                                 <p><?php echo "@" . @$_SESSION['user']; ?></p>
                             </div>
                         </div>
-                        <div class="text-user2 col-3">
+                        <div class="text-user2 col-md-3 col-12">
                             <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-plus"></i></button>
 
                             <!-- Modal -->
@@ -124,8 +124,7 @@ foreach ($images_listes as $images_liste) {
     <footer>
 
         <nav class="row navbar fixed-bottom navbar-light bg-light">
-            <a class="ml-3 navbar-brand" href="#"><i class="fas fa-search"></i></a>
-            <a class="navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
+            <a class="logo mx-auto navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
             <a class="navbar-brand" href="traitement/traitement_deconnexion.php"><i class="famasito fas fa-sign-out-alt"></i></a>
         </nav>
     </footer>

@@ -43,7 +43,7 @@ include 'bdd.php';
                                 </div>
                             </div>
                             <div class="image-home col-12 col-md-8">
-                            <img src="' . $images_liste["image_lien"] .' " width="720px" height="550px" class="image-profil" alt="img" >
+                            <img src="' . $images_liste["image_lien"] .' " width="550px" height="550px" class="img-fluid image-profil" alt="Responsive image" >
                             </div>
                             <div class="image-like col-12 col-md-8">
                                 <i class="far fa-heart"></i>: like
@@ -62,11 +62,10 @@ include 'bdd.php';
     <footer>
 
         <nav class="row navbar fixed-bottom navbar-light bg-light">
-            <a class="ml-3 navbar-brand" href="#"><i class="fas fa-search"></i></a>
-            <a class="navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
-            <a class="navbar-brand" href="#"><i class="far fa-plus-square"></i></a>
+            <a class="logo mx-auto navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
         </nav>
     </footer>
+
 
 </body>
 <!-- Boostrap -->
