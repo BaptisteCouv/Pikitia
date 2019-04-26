@@ -6,20 +6,20 @@
 
 /* index.php */
 
-.suzilikeaboy{
+.suzilikeaboy {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
 }
 
-.jumbotron{
+.jumbotron {
     margin-top: 200px;
 }
 
-.modal-image{
+.modal-image {
     margin-top: 70px;
 }
 
-.magalomane{
+.magalomane {
     background: linear-gradient(70deg, #26051D, #40A497);
 }
 
@@ -43,7 +43,6 @@
 }
 
 .image-commentaire {
-    height: 150px;
     background: linear-gradient(#F2F2F2, white);
 }
 
@@ -190,4 +189,3 @@ h4 {
 .alert {
     font-size: 20px;
 }
-
