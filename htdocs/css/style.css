@@ -6,6 +6,23 @@
 
 /* index.php */
 
+.suzilikeaboy{
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.jumbotron{
+    margin-top: 200px;
+}
+
+.modal-image{
+    margin-top: 70px;
+}
+
+.magalomane{
+    background: linear-gradient(70deg, #26051D, #40A497);
+}
+
 .header-home {
     margin-top: 80px;
     padding: 10px;
@@ -173,3 +190,4 @@ h4 {
 .alert {
     font-size: 20px;
 }
+

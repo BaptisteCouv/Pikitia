@@ -28,7 +28,7 @@
             <div class="row justify-content-center piki">
                 <div class="connexion-user col-12 col-md-8 form-group">
                     <div class="row justify-content-center">
-                        <div class="col-6 formulaire-connexion">
+                        <div class="col-12 col-md-6 formulaire-connexion">
                             <h1>Connexion</h1>
                             <?php if (!empty($_GET['errConnexion'])) {
                                 ?><div class="alert alert-danger" role="alert"><?php
@@ -63,7 +63,7 @@
                             <form action="traitement/traitement_connexion.php" method="post">
                                 <input class="marg form-control" type="text" name="pseudo" placeholder="Entrer votre pseudo">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
-                                <button id="explique" type="submit" class="marg btn btn-primary">Connexion</button>
+                                <button id="explique" type="submit" class="marg btn btn-primary btn-lg">Connexion</button>
                             </form>
                             <h4 class="marg">Vous N'avez pas de compte chez <b>Pikitia</b> ? Inscrivez-vous des <a href="inscription.php">maintenant</a></h4>
                         </div>

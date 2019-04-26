@@ -26,7 +26,7 @@
             <div class="row justify-content-center piki">
                 <div class="connexion-user col-12 col-md-8 form-group">
                     <div class="row justify-content-center">
-                        <div class="col-6 formulaire-connexion">
+                        <div class="col-12 col-md-6 formulaire-connexion">
                             <h1>Inscription</h1>
                             <?php 
                                 if(!empty($_GET['erreurIncription'])){
@@ -45,7 +45,7 @@
                                 <input class="marg form-control" type="text" name="prenom" placeholder="Entrer votre prénom">
                                 <input class="marg form-control" type="text" name="email" placeholder="Entrer votre @ email">
                                 <input class="marg form-control" type="password" name="mdp" placeholder="Entrer votre mot de passe">
-                                <button type="submit" id="explique2" class="marg btn btn-primary">Inscription</button>
+                                <button type="submit" id="explique2" class="marg btn btn-primary btn-lg">Inscription</button>
                             </form>
                             <h4 class="marg">Déjà un compte chez <b>Pikitia</b>?<a href="connexion.php">Connectez-vous</a></h4>
                         </div>
